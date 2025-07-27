@@ -3,7 +3,7 @@ defmodule GigalixirGettingStartedWeb.SongsLive.Show do
   alias GigalixirGettingStarted.Music
 
   def mount(%{"id" => id}, _session, socket) do
-    song = Music.get_song!(id)
+    song = Enum.find(GigalixirGettingStarted.StaticSongs.all(), fn s -> to_string(s.id) == id end)
     {:ok, assign(socket, song: song)}
   end
 
