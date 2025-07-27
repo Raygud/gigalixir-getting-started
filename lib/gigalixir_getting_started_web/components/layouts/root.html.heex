@@ -1,17 +1,36 @@
 <!DOCTYPE html>
-<html lang="en" class="[scrollbar-gutter:stable]">
+<html lang="en" class="dark [scrollbar-gutter:stable]">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="csrf-token" content={get_csrf_token()} />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+    theme: {
+      extend: {
+        colors: {
+          brand: "#FD4F00",
+          olavPurple: "#a78bfa"
+        },
+        backgroundImage: {
+          'olav-gradient': 'linear-gradient(to bottom right, #1e3a8a, #4338ca, #6d28d9)'
+        }
+      }
+    }
+  }
+</script>
+
     <.live_title default="GigalixirGettingStarted" suffix=" · Phoenix Framework">
       {assigns[:page_title]}
     </.live_title>
+    
     <link phx-track-static rel="stylesheet" href={~p"/assets/app.css"} />
     <script defer phx-track-static type="text/javascript" src={~p"/assets/app.js"}>
     </script>
   </head>
-  <body class="bg-white">
+<body class="bg-white dark:bg-black text-black dark:text-white">
     {@inner_content}
   </body>
 </html>

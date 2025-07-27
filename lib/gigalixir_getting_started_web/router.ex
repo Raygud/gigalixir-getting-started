@@ -17,7 +17,12 @@ defmodule GigalixirGettingStartedWeb.Router do
   scope "/", GigalixirGettingStartedWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/", LandingLive, :index
+    live "/songs", SongsLive.Index, :index
+    live "/songs/:id", SongsLive.Show, :show
+    live "/faq", FaqLive, :index
+    live "/family", FamilyLive, :index
+    live "/toilet", ToiletLive, :index
   end
 
   # Other scopes may use custom stacks.

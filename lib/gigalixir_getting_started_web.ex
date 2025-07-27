@@ -53,7 +53,7 @@ defmodule GigalixirGettingStartedWeb do
   def live_view do
     quote do
       use Phoenix.LiveView,
-        layout: {GigalixirGettingStartedWeb.Layouts, :app}
+        layout: {GigalixirGettingStartedWeb.Layouts, :root}
 
       unquote(html_helpers())
     end
