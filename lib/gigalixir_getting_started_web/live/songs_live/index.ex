@@ -3,7 +3,8 @@ defmodule GigalixirGettingStartedWeb.SongsLive.Index do
   alias GigalixirGettingStarted.Music
 
   def mount(_params, _session, socket) do
-    songs = Music.list_songs()
+    Code.compile_file("lib/gigalixir_getting_started/static_songs.exs")
+    songs = GigalixirGettingStarted.StaticSongs.all()
     {:ok, assign(socket, query: "", songs: songs, grouped_songs: group_and_sort(songs))}
   end
 
