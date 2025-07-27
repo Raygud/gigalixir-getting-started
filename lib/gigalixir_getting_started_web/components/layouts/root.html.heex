@@ -16,11 +16,27 @@
         },
         backgroundImage: {
           'olav-gradient': 'linear-gradient(to bottom right, #1e3a8a, #4338ca, #6d28d9)'
-        }
+        },
+        keyframes: {
+          bounceRotated: {
+            '0%, 100%': {
+              transform: 'translateY(0) rotate(351deg)',
+              animationTimingFunction: 'cubic-bezier(0.8,0,1,1)',
+            },
+            '50%': {
+              transform: 'translateY(-25%) rotate(351deg)',
+              animationTimingFunction: 'cubic-bezier(0,0,0.2,1)',
+            },
+          },
+        },
+        animation: {
+          'bounce-rotated': 'bounceRotated 1s infinite',
+        },
       }
     }
   }
 </script>
+
 
     <.live_title default="GigalixirGettingStarted" suffix=" · Phoenix Framework">
       {assigns[:page_title]}
