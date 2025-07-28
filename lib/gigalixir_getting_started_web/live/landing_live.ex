@@ -37,7 +37,7 @@ defmodule GigalixirGettingStartedWeb.LandingLive do
             navigate="/family"
             class="bg-purple-500 hover:bg-purple-600 text-white p-4 rounded-xl text-lg font-bold transition shadow-md"
           >
-            Familjan 👨‍👩‍👧‍👦
+            Húskið 👨‍👩‍👧‍👦
           </.link>
           
           <.link
