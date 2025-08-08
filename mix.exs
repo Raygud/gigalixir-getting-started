@@ -57,7 +57,9 @@ defmodule GigalixirGettingStarted.MixProject do
       {:gettext, "~> 0.26"},
       {:jason, "~> 1.2"},
       {:dns_cluster, "~> 0.1.1"},
-      {:bandit, "~> 1.5"}
+      {:bandit, "~> 1.5"},
+      {:elixir_uuid, "~> 1.2"},
+      {:myxql, ">= 0.0.0"}
     ]
   end
 

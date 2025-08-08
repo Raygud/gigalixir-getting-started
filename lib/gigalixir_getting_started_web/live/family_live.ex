@@ -36,7 +36,7 @@ defmodule GigalixirGettingStartedWeb.FamilyLive do
             class="w-3/4 mx-auto rounded-lg shadow-lg rotate-2 hover:rotate-0 transition-transform duration-300"
           />
           <p class="mt-3 text-xl text-white font-bold">
-            Fríði <span class="block text-blue-400 text-sm font-normal">👦 Beiggji</span>
+            Fríði <span class="block text-blue-400 text-sm font-normal">👦 Beiggi</span>
           </p>
         </div>
         

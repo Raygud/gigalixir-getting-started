@@ -23,6 +23,7 @@ defmodule GigalixirGettingStartedWeb.Router do
     live "/faq", FaqLive, :index
     live "/family", FamilyLive, :index
     live "/toilet", ToiletLive, :index
+    live "/*path", NotFoundLive, :index
   end
 
   # Other scopes may use custom stacks.
